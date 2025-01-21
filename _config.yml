@@ -29,7 +29,7 @@ url: "https://toastrenumeration.github.io/" # the base hostname & protocol for y
 github_username:  toastrenumeration
 
 # Build settings
-theme: jekyll-sleek
+theme: minima
 plugins:
   - jekyll-feed
 
