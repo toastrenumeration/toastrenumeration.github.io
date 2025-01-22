@@ -1,0 +1,12 @@
+html {
+    background-color: #0b032d;
+    color: #f7ece1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Libre Baskerville", Georgia, serif;
+}
+
+body, p {
+    font-family: Verdana, Arial, sans-serif;
+}
