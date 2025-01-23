@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <style>
-        .active {
-            color: #e5b782;
-        }
-        
-        nav {
-            display: flex;
-            float: right;
-            margin: 0;
-            padding: 0;
-        }
+        <style>
+            .active {
+                color: #e5b782;
+            }
+            
+            nav {
+                display: flex;
+                float: right;
+                margin: 0;
+                padding: 0;
+            }
 
-        nav li, a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 14px 16px;
-            color: #f7ece1;
-            font-family: "Libre Baskerville", Georgia, serif;
-        }
+            nav li, a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 14px 16px;
+                color: #f7ece1;
+                font-family: "Libre Baskerville", Georgia, serif;
+            }
 
-        nav li a {
-            margin-top: 0%;
-            margin-bottom: 0%;
-        }
-    </style>
-</head>
+            nav li a {
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+        </style>
+    </head>
 
-<div class="container" style="margin-left: 2%; margin-right: 2%;">
-    <nav>
-        <ul>
-            {% for item in site.data.navigation %}
-            <li>
-                <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>
-                    {{ item.name }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
+    <div class="container" style="margin-left: 2%; margin-right: 2%;">
+        <nav>
+            <ul>
+                {% for item in site.data.navigation %}
+                <li>
+                    <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>
+                        {{ item.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
 
-    <a href="/"><h1>Hyperspace</h1></a>
-</div>
+        <a href="/"><h1>Hyperspace</h1></a>
+    </div>
 </html>
