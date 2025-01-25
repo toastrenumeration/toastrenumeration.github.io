@@ -13,24 +13,24 @@
                 padding: 0;
             }
 
-            nav li, a {
+            .nav-item {
                 text-decoration: none;
                 display: inline-block;
-                padding: 14px 16px;
+                padding: 12px 20px;
                 color: #f7ece1;
                 font-family: "Libre Baskerville", Georgia, serif;
             }
 
             nav li a {
-                margin-top: 0%;
-                margin-bottom: 0%;
+                color: #f7ece1;
+                text-decoration: none;
             }
         </style>
     </head>
 
     <div class="container" style="margin-left: 2%; margin-right: 2%;">
         <nav>
-            <ul>
+            <ul style="margin-top: 30px;">
                 {% for item in site.data.navigation %}
                 <li>
                     <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>
@@ -41,6 +41,6 @@
             </ul>
         </nav>
 
-        <a href="/"><h1>Hyperspace</h1></a>
+        <a href="/" class="nav-item"><h1>Hyperspace</h1></a>
     </div>
 </html>
