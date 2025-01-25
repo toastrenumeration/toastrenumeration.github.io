@@ -21,10 +21,15 @@
                 font-family: "Libre Baskerville", Georgia, serif;
             }
 
+            .nav-item:hover {
+                text-decoration: none;
+            }
+
             nav li a {
                 color: #f7ece1;
                 text-decoration: none;
             }
+
         </style>
     </head>
 
@@ -32,7 +37,7 @@
         <nav>
             <ul style="margin-top: 30px;">
                 {% for item in site.data.navigation %}
-                <li>
+                <li class="nav-item">
                     <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>
                         {{ item.name }}
                     </a>
