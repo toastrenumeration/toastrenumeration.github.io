@@ -16,6 +16,7 @@
             .nav-item {
                 text-decoration: none;
                 display: inline-block;
+                margin-bottom: 15px;
                 padding: 12px 20px;
                 color: #f7ece1;
                 font-family: "Libre Baskerville", Georgia, serif;
@@ -38,7 +39,7 @@
             <ul style="margin-top: 30px;">
                 {% for item in site.data.navigation %}
                 <li class="nav-item">
-                    <a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>
+                    <a href="{{ item.link }}" style="text-decoration: none;" {% if item.link == page.url %}class="active"{% endif %}>
                         {{ item.name }}
                     </a>
                 </li>
