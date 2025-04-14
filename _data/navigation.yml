@@ -1,5 +1,5 @@
 # array of navigation items
 - link: "/"
   name: Home
-- link: "/about/"
-  name: About
+- link: "/resources/"
+  name: Resources
